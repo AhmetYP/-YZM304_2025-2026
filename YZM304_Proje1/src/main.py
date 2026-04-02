@@ -1,16 +1,16 @@
 from pathlib import Path
-from src.model_sklearn import train_sklearn_mlp, evaluate_sklearn_model
+from YZM304_Proje1.src.model_sklearn import train_sklearn_mlp, evaluate_sklearn_model
 import matplotlib.pyplot as plt
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-from src.model_pytorch import train_pytorch_model, evaluate_pytorch_model
-from src.data_utils import load_data, split_data, standardize_data
-from src.eda import (
+from YZM304_Proje1.src.model_pytorch import train_pytorch_model, evaluate_pytorch_model
+from YZM304_Proje1.src.data_utils import load_data, split_data, standardize_data
+from YZM304_Proje1.src.eda import (
     basic_info,
     plot_class_distribution,
     plot_feature_histograms,
     plot_correlation_heatmap,
 )
-from src.model_numpy import train_model, predict, train_model_2hidden, predict_2hidden
+from YZM304_Proje1.src.model_numpy import train_model, predict, train_model_2hidden, predict_2hidden
 
 def evaluate_model(parameters, X_train_np, y_train_np, X_val_np, y_val_np, X_test_np, y_test_np):
     y_train_pred = predict(parameters, X_train_np).flatten()

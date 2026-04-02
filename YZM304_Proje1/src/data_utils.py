@@ -2,7 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-from src.config import CSV_PATH, RANDOM_STATE, TEST_SIZE, VAL_SIZE
+from YZM304_Proje1.src.config import CSV_PATH, RANDOM_STATE, TEST_SIZE, VAL_SIZE
 
 
 def load_data():

@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from src.config import FIGURES_DIR
+from YZM304_Proje1.src.config import FIGURES_DIR
 
 
 def basic_info(df: pd.DataFrame):
